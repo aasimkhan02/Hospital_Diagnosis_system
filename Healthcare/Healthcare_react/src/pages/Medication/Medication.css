@@ -1,0 +1,175 @@
+.Medication {
+    position: relative;
+    min-width: 100%;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Frame1{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: hidden;
+    padding-left: 5%;
+    gap: 10vh;
+}
+
+.Frame1 .images {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: relative;
+    min-width: 60%;
+    height: 82vh;
+}
+
+.Frame1 .images .Blob {
+    width: 120vh;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 10vh;
+}
+
+.Frame1 .images img {
+    width: 100vh;
+    position: absolute;
+    right: 5vh;
+    top: 15vh;
+    z-index: 2;
+}
+.Frame1 .Headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+.Frame1 .Headline h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.Services {
+    min-width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.Services .heading {
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+}
+
+.Services .service-options {
+    min-width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 7%;
+    list-style: none;
+}
+
+.Services .service-options .Medication-suggestion,
+.Services .service-options .Medication-tracker,
+.Services .service-options .Medication-history {
+    width: 45vh;
+    height: 50vh;
+    border-radius: 15px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 400;
+    gap: 30px;
+    background-color: white; 
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.Services .service-options .active {
+    background-color: #167bb9;
+    color: white;
+}
+
+.Services .service-options hr {
+    width: 40%;
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+
+.Services .service-options ul {
+    display: flex;
+    width: 100%;
+    padding-left: 8%;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 2vh;
+    text-align: left;
+    gap: 5px;
+}
+
+.Services .service-options ul li {
+    margin: 0;
+}
+.Medication-suggestion-section{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    position: relative;
+    margin-bottom: 10vh;
+}
+.Medication-suggestion-section .background{
+    width: 100%;
+    height: 70%;
+    background-image: url('./../../assets/Medicines.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(30%);
+}
+.Medication-suggestion-section h1{
+    position: absolute;
+    top: 10vh;
+    color: white;
+    font-size: 50px;
+}
+.Medication-suggestion-section .Search-by-symptoms{
+    width: 70%;
+    height: 60%;
+    background-color: #167bb9;
+    position: relative;
+    bottom: 15vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.304);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Medication-suggestion-section .Search-by-symptoms input{
+    width: 100vh;
+    height: 10vh;
+}
+.Medication-suggestion-section .Search-by-symptoms input::placeholder{
+    font-size: 19px;
+    position: relative;
+    left: 30px;
+    font-weight: 400;
+}

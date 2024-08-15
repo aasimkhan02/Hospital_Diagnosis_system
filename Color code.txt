@@ -1,0 +1,6 @@
+[780000, c1121f, fdf0d5, 003049, 669bbc]
+#780000 - Dark red
+#c1121f - Light red
+#fdf0d5 - Creame
+#003049 - blue
+#669bbc - sky blue
